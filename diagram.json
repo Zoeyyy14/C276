@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "author": "Zoey Ma",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 299.3, "left": -119, "attrs": {} },
+    { "type": "wokwi-tv", "id": "tv1", "top": -307.2, "left": -388.8, "attrs": {} },
+    {
+      "type": "wokwi-registor",
+      "id": "r1",
+      "top": 395.3,
+      "left": -365.1,
+      "attrs": { "value": "1000" }
+    },
+    { "type": "wokwi-dht22", "id": "dh1", "top": 344.6, "left": -279.1, "attrs": {} }
+  ],
+  "connections": [
+    ["tv1:GND","uno:GND.1","black",["v20.29","h-4.4"]],
+    ["tv1:IN","uno:7","purple",["v17.59","h79.06"]],
+    ["tv1:SYNC","uno:9","blue",["v12.85","h35.64"]]
+  ],
+  "dependencies": {}
+}
